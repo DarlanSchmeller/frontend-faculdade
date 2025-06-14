@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Equipamentos</title>
+</head>
+<style>
+    table, td, th {
+        border: solid thin;
+        border-collapse: collapse;
+    }
+
+    body {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    thead, tfoot {
+        padding: 100px;
+        width: 100px;
+        background-color: #01316a;
+        color: white;
+    }
+    table {
+        width: 100%
+    }
+    thead th {
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    tfoot td {
+        padding: 30px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    tbody td {
+        padding: 15px;
+        font-weight: 600;
+    }
+</style>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">MODELO</th>
+                <th rowspan="2">ALTURA</th>
+                <th rowspan="2">LARGURA</th>
+                <th colspan="2">ACESSÓRIOS</th>
+            </tr>
+            <tr>
+                <th>USB	</th>
+                <th>WI-FI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Xk-7</td>
+                <td>20	</td>
+                <td>20	</td>
+                <td><img src="./imgs/sim.jpg" alt="sim"></td>
+                <td><img src="./imgs/nao.jpg" alt="sim"></td>
+            </tr>
+            <tr>
+                <td>WZ8</td>
+                <td>10</td>
+                <td>15</td>
+                <td><img src="./imgs/nao.jpg" alt="sim"></td>
+                <td><img src="./imgs/nao.jpg" alt="sim"></td>
+            </tr>
+            <tr>
+                <td>X15	</td>
+                <td>30	</td>
+                <td>30	</td>
+                <td><img src="./imgs/sim.jpg" alt="sim"></td>
+                <td><img src="./imgs/sim.jpg" alt="sim"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="5">Dados técnicos do equipamento</td>
+        </tfoot>
+    </table>
+</body>
+</html>

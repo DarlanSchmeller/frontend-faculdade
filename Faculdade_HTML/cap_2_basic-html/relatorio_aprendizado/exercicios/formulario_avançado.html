@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Avançado</title>
+</head>
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+    }
+    img {
+        float: left;
+        padding-bottom: 100vh;
+        padding-right: 30px;
+    }
+    h1 {
+        color: purple;
+        border-bottom: 2px purple solid;
+        text-align: right;
+    }
+    fieldset {
+        border: solid 3px pink;
+        padding: 30px 20px;
+        margin: 20px 0px;
+        gap: 10px;
+    }
+    input {
+        width: 87%;
+        background-color: pink;
+        border: none;
+        margin-bottom: 20px;
+    }
+    #email {
+        margin-bottom: 0;
+    }
+    textarea {
+        background-color: pink;
+        border: none;
+        width: 87%;
+    }
+    button[type="submit"] {
+        width: 100px;
+        background-color: pink;
+        border: none;
+        margin-left: 20px;
+        padding: 5px 20px;
+    }
+    label {
+        display: inline-block;
+        width: 100px;
+        padding: 0;
+    }
+</style>
+<body>
+    <h1>Dados da conta</h1>
+    <img src="./imgs/form1_back.jpg" alt="">
+    <form action="#">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+        </fieldset>
+        
+    
+        <fieldset>
+            <legend>Dados da Conta:</legend>
+            
+            <label for="senha">Senha:</label>
+            <input type="text" name="senha" id="senha">
+            <br>
+            <label for="frase">Frase opcional:</label>
+            <textarea type="text" name="frase" id="frase" rows="2"></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
